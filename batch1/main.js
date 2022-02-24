@@ -1,6 +1,6 @@
 const { response } = require("express");
 
-const {router} = require ("routers.js");
+const {router} = require ("/.routers");
 
 
 let app = express();
