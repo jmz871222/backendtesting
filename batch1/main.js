@@ -1,6 +1,6 @@
-const express = require("express");
+let express = require("express");
 
-const app = express();
+let app = express();
 
 app.listen(3000, (errors) => {
     if (errors) {
