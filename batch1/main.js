@@ -9,7 +9,14 @@ router.get("/home", (request, response) => {
     response.send("Welcome to Dev 2");
 });
 
+router.get("/sum", (request, response) => {
+    let sum = request.query.a + request.query.b;
+    response.send("sum" + sum);
+});
+
 app.use(router);
+
+app.get();
 
 app.listen(3000, (errors) => {
     if (errors) {
